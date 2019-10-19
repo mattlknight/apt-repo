@@ -21,6 +21,8 @@
     - No passphrase provided, to enable scripting
 - Export the public key (Binary Format, for Apt)
   - `gpg --export -u dkpg1 --output apt_repo.pub.gpg`
+- On client hosts, add public GPG key to apt conf
+  - `wget -O - https://<repo_host>/<repo_path>/apt_repo.pub.gpg | sudo tee /etc/apt/trusted.gpg.d/<replace_with_identifying_repo_name>.gpg >/dev/null`
 
 ## Directory Structure - Pre Script
 ```text
