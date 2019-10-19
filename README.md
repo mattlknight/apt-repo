@@ -1,5 +1,12 @@
 # Making An Apt Repository
 
+## ToDo
+- Automate Directory Structure Creation
+- Automate apt-ftparchive commands based on directory structure
+
+## ToDo - Maybe
+- Create dropzone for packages to automatically trigger repo update script
+
 ## Scripts
 - make_clean.sh - Cleans up artifacts created by scripts
   - Shouldn't be required, but useful for troubleshooting
